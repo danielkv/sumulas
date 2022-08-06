@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .eventContainer {
+    break-before: always;
+    page-break-before: always;
+    -webkit-page-break-before: always;
+    border: none;
+  }
+}
+
+body {
+  margin: 0;
+  width: 210mm;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10pt;
+}
+#root div {
+  display: flex;
+}
+
+.eventContainer {
+  margin: 4mm 0;
+  padding: 6mm 5mm;
+  gap: 10mm;
+  border-bottom: 1mm solid #ccc;
+
+  break-before: always;
+  page-break-before: always;
+  -webkit-page-break-before: always;
+  border: none;
+}
+
+.allRoundsContainer {
+  display: grid !important;
+  justify-content: flex-start;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 5mm;
+}
+
+.roundContainer {
+  flex: 1;
+}
+.roundTitle {
+  font-weight: bold;
+  margin-bottom: 2mm;
+}
+
+.allExerciceContainer {
+  padding: 0;
+  border-collapse: collapse;
+}
+.allExerciceContainer td {
+  padding: 1mm 0;
+}
+
+.exerciceTitle {
+  text-align: left;
+  width: 38mm;
+}
+.exerciceSquareContainer {
+  flex-direction: row;
+  gap: 1mm;
+}
+.exerciceSquare {
+  border: 0.5mm solid black;
+  width: 5mm;
+  height: 5mm;
+  justify-content: center;
+  align-items: center;
+}
+.exerciceSquareNumber {
+  font-size: 8.5pt;
+  text-align: center;
+}
+.exerciceSquareMaxWeight {
+  width: 14mm;
+  height: 10mm;
+}
+
+.headerContainer {
+  gap: 5mm;
+}
+
+.headerTitleContainer {
+  flex-direction: row;
+  gap: 5mm;
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.headerTitleContainer div {
+  position: relative;
+}
+.headerTitleContainer div:not(:last-child)::after {
+  content: "/";
+  position: absolute;
+  right: -4mm;
+}
+.subHeader {
+  flex-direction: row;
+  gap: 5mm;
+}
+.subHeader div {
+  flex: 1;
+}
+
+.footerContainer {
+  flex-direction: row;
+  gap: 5mm;
+}
+.footerContainer div {
+  flex: 1;
+}
+
+.underlined {
+  padding-bottom: 2mm;
+  border-bottom: 0.5mm solid black;
+}
