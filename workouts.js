@@ -116,15 +116,15 @@ export default {
       type: "max_weight",
       rounds: [
         {
-          name: "Atleta 1",
+          name: "Atleta 1:",
           exercices: [{ name: "Clean", squares: 3, reps: 1 }],
         },
         {
-          name: "Atleta 2",
+          name: "Atleta 2:",
           exercices: [{ name: "Clean", squares: 3, reps: 1 }],
         },
         {
-          name: "Atleta 2",
+          name: "Atleta 3:",
           exercices: [{ name: "Clean", squares: 3, reps: 1 }],
         },
       ],
@@ -137,15 +137,15 @@ export default {
       type: "max_weight",
       rounds: [
         {
-          name: "Atleta 1",
+          name: "Atleta 1:",
           exercices: [{ name: "Clean and Jerk", squares: 3, reps: 1 }],
         },
         {
-          name: "Atleta 2",
+          name: "Atleta 2:",
           exercices: [{ name: "Clean and Jerk", squares: 3, reps: 1 }],
         },
         {
-          name: "Atleta 2",
+          name: "Atleta 3:",
           exercices: [{ name: "Clean and Jerk", squares: 3, reps: 1 }],
         },
       ],
@@ -186,7 +186,7 @@ export default {
       rounds: [
         {
           exercices: [
-            { name: "Single Under", reps: 50 },
+            { name: "Single Under", squares: 5, reps: 50 },
             { name: "Leg Raises Syncro", reps: 10 },
             { name: "Front squat", reps: 10 },
             { name: "Wall walk Syncro", squares: 3, reps: 3 },
@@ -204,7 +204,7 @@ export default {
       rounds: [
         {
           exercices: [
-            { name: "Double Under", reps: 50 },
+            { name: "Double Under", squares: 5, reps: 50 },
             { name: "T2B Syncro", reps: 10 },
             { name: "Front squat", reps: 10 },
             { name: "Wall walk Syncro", squares: 3, reps: 3 },
@@ -222,7 +222,7 @@ export default {
       rounds: [
         {
           exercices: [
-            { name: "Double Under", reps: 50 },
+            { name: "Double Under", squares: 5, reps: 50 },
             { name: "T2B", reps: 10 },
             { name: "Front squat", reps: 10 },
             { name: "Wall walk", squares: 3, reps: 3 },
@@ -240,7 +240,7 @@ export default {
       rounds: [
         {
           exercices: [
-            { name: "Double Under", reps: 50 },
+            { name: "Double Under", squares: 5, reps: 50 },
             { name: "T2B", reps: 10 },
             { name: "Front squat", reps: 10 },
             { name: "Wall walk", squares: 3, reps: 3 },
@@ -325,14 +325,14 @@ export default {
           exercices: [
             { name: "B O W Syncro", reps: 21 },
             { name: "Worm Squat", reps: 21 },
-            { name: "Cal Row", squares: 3, reps: 9 },
+            { name: "Cal Row", reps: 21 },
           ],
         },
         {
           exercices: [
             { name: "B O W Syncro", reps: 15 },
             { name: "Worm Push Press", reps: 15 },
-            { name: "Cal Row", squares: 3, reps: 9 },
+            { name: "Cal Row", reps: 15 },
           ],
         },
         {
@@ -355,21 +355,21 @@ export default {
           exercices: [
             { name: "B O W Syncro", reps: 21 },
             { name: "Worm Squat", reps: 21 },
-            { name: "Cal Row", squares: 3, reps: 9 },
+            { name: "Cal Row / W hold", reps: 21 },
           ],
         },
         {
           exercices: [
             { name: "B O W Syncro", reps: 15 },
             { name: "Worm Thruster", reps: 15 },
-            { name: "Cal Row", squares: 3, reps: 9 },
+            { name: "Cal Row / W hold", reps: 15 },
           ],
         },
         {
           exercices: [
             { name: "B O W Syncro", squares: 3, reps: 9 },
             { name: "Worm Clean and Jerk", squares: 3, reps: 9 },
-            { name: "Cal Row", squares: 3, reps: 9 },
+            { name: "Cal Row / W hold", squares: 3, reps: 9 },
           ],
         },
       ],
@@ -378,7 +378,7 @@ export default {
       name: "Final de milhões",
       eventNumber: 5,
       category: "RX masculino",
-      timecap: 480,
+      timecap: 300,
       type: "for_time",
       rounds: [
         {
@@ -408,7 +408,7 @@ export default {
       name: "Final de milhões",
       eventNumber: 5,
       category: "RX feminino",
-      timecap: 480,
+      timecap: 300,
       type: "for_time",
       rounds: [
         {
