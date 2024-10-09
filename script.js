@@ -103,7 +103,7 @@ function buildHeader(header) {
   judgeNameElem.innerText = "Judge:";
 
   headerTitleContainerElem.appendChild(eventNumberElem);
-  headerTitleContainerElem.appendChild(eventTitleElem);
+  if (header.name) headerTitleContainerElem.appendChild(eventTitleElem);
   headerTitleContainerElem.appendChild(eventCategoryElem);
   headerTitleContainerElem.appendChild(eventTypeElem);
   headerTitleContainerElem.appendChild(eventTimecapElem);
@@ -151,7 +151,7 @@ function buildRound(round, type) {
   const roundContainerElem = createElement(ROUND_CONTAINER_CLASS);
   const allExerciceContainerElem = createElement(
     ALL_EXERCICES_CONTAINER_CLASS,
-    "table"
+    "table",
   );
   const roundTitleElem = createElement(ROUND_TITLE_CLASS);
 
@@ -174,23 +174,30 @@ function buildExercice(exercice, type) {
   const titleElem = createElement(EXERCICE_TITLE_CLASS, "td");
   const squareColumnElem = createElement(EXERCICE_SQUARE_COLUMN_CLASS, "td");
   const squareContainerElem = createElement(EXERCICE_SQUARE_CONTAINER_CLASS);
-  const countSquare =
-    exercice.squares || Math.ceil(exercice.reps / SQUARE_DIVIDER);
+  const reps = exercice.reps;
+  const units = exercice.units || "x";
+
+  const countSquare = reps === "max"
+    ? exercice.squares || SQUARE_DIVIDER
+    : exercice.squares ||
+      Math.ceil(exercice.reps / SQUARE_DIVIDER);
 
   const squareNumber = Math.ceil(exercice.reps / countSquare);
 
-  titleElem.innerText = `${exercice.reps}x ${exercice.name}`;
+  const repsLabel = reps === "max" ? "MAX" : `${reps}${units}`;
+
+  titleElem.innerText = `${repsLabel} ${exercice.name}`;
 
   Array.from({ length: countSquare }).forEach((_, index) => {
     const squareElem = createElement(EXERCICE_SQUARE_CLASS);
     if (type !== "max_weight") {
       const squareNumberElem = createElement(EXERCICE_SQUARE_NUMBER_CLASS);
-      const number = Math.max(
+      const number = exercice.squareNumber || Math.max(
         0,
-        Math.min(squareNumber, exercice.reps - index * squareNumber)
+        Math.min(squareNumber, exercice.reps - index * squareNumber),
       );
 
-      squareNumberElem.innerText = number;
+      if (!exercice.emptySquare) squareNumberElem.innerText = number;
       squareElem.appendChild(squareNumberElem);
     } else {
       squareElem.classList.add(EXERCICE_SQUARE_MAX_WEIGHT_CLASS);
