@@ -61,7 +61,8 @@ body {
 }
 .exerciceSquare {
   border: 0.5mm solid black;
-  width: 5mm;
+  min-width: 5mm;
+  padding: 0 1mm;
   height: 5mm;
   justify-content: center;
   align-items: center;

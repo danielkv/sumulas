@@ -11,10 +11,9 @@ export default [
           {
             name: "Run",
             reps: 1.6,
-            squares: 1,
-
+            squares: 4,
+            squareNumber: 400,
             units: "km",
-            emptySquare: true,
           },
           {
             name: "Clean n' Jerk 50kg",
@@ -30,7 +29,7 @@ export default [
     name: "C&J Run",
     eventNumber: 3,
     category: "Intermediário Masculino",
-    timecap: 840,
+    timecap: 780,
     type: "amrap",
     rounds: [
       {
@@ -38,10 +37,9 @@ export default [
           {
             name: "Run",
             reps: 1.6,
-            squares: 1,
-
+            squares: 4,
             units: "km",
-            emptySquare: true,
+            squareNumber: 400,
           },
           {
             name: "Clean n' Jerk 65kg",
@@ -57,7 +55,7 @@ export default [
     name: "C&J Run",
     eventNumber: 3,
     category: "RX Masculino",
-    timecap: 840,
+    timecap: 780,
     type: "amrap",
     rounds: [
       {
@@ -65,10 +63,9 @@ export default [
           {
             name: "Run",
             reps: 1.6,
-            squares: 1,
-
+            squares: 4,
             units: "km",
-            emptySquare: true,
+            squareNumber: 400,
           },
           {
             name: "Clean n' Jerk 80kg",

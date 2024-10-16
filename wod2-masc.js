@@ -3,7 +3,7 @@ export default [
     name: "Row in the game",
     eventNumber: 2,
     category: "Scaled Masculino",
-    timecap: 900,
+    timecap: 780,
     type: "for_time",
     rounds: [
       {
@@ -21,7 +21,7 @@ export default [
     name: "Row in the game",
     eventNumber: 2,
     category: "Intermediate Masculino",
-    timecap: 900,
+    timecap: 780,
     type: "for_time",
     rounds: [
       {
@@ -39,7 +39,7 @@ export default [
     name: "Row in the game",
     eventNumber: 2,
     category: "RX Masculino",
-    timecap: 900,
+    timecap: 780,
     type: "for_time",
     rounds: [
       {

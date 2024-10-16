@@ -3,7 +3,7 @@ export default [
     name: "Finish Dead",
     eventNumber: 4,
     category: "Scaled Feminino",
-    timecap: 540,
+    timecap: 420,
     type: "for_time",
     rounds: [
       {
@@ -33,7 +33,7 @@ export default [
     name: "Finish Dead",
     eventNumber: 4,
     category: "Intermediário Feminino",
-    timecap: 540,
+    timecap: 480,
     type: "for_time",
     rounds: [
       {
@@ -63,7 +63,7 @@ export default [
     name: "Finish Dead",
     eventNumber: 4,
     category: "RX Feminino",
-    timecap: 540,
+    timecap: 480,
     type: "for_time",
     rounds: [
       {
