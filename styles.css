@@ -7,7 +7,7 @@
 
 @page {
   size: A4;
-  margin: 0;
+  margin: 10mm 10mm;
 }
 
 body {
@@ -22,8 +22,7 @@ body {
 
 .eventContainer {
   display: block;
-  margin: 16mm 0 0 0;
-  padding: 0 5mm 16mm 5mm;
+  padding: 8mm;
   border-bottom: 1mm solid darkred;
 }
 
@@ -124,8 +123,12 @@ body {
   }
 
   .eventContainer {
-    break-after: avoid;
-    break-before: avoid;
+    page-break-inside: avoid;
+    padding: 0;
     border: none;
+  }
+
+  .eventContainer:not(:first-child) {
+	margin-top: 10mm;
   }
 }
