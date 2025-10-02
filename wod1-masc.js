@@ -1,81 +1,69 @@
 export default [
   {
-    name: "Jump Frog",
+    name: "WOD 1",
     eventNumber: 1,
     category: "Scaled Masculino",
-    timecap: 480,
+    timecap: 780,
     type: "for_time",
     rounds: [
       {
         exercices: [
-          { name: "Leg Raises", reps: 30 },
-          { name: "Burpees Box Jump/Step Over", squares: 6, reps: 30 },
+          { name: "Cal Row", reps: 40 },
+          { name: "Pull Up", reps: 28 },
+          { name: "Burpee Box Jump/Step Over", reps: 24 },
         ],
       },
       {
         exercices: [
-          { name: "Leg Raises", reps: 20 },
-          { name: "Burpees Box Jump/Step Over", reps: 20 },
-        ],
-      },
-      {
-        exercices: [
-          { name: "Leg Raises", reps: 10 },
-          { name: "Burpees Box Jump/Step Over", reps: 10 },
+          { name: "Cal Row", reps: 40 },
+          { name: "KB Swing 18kg", reps: 32 },
+          { name: "Burpees Box Jump/Step Over", reps: 28 },
         ],
       },
     ],
   },
   {
-    name: "Jump Frog",
+    name: "WOD 1",
     eventNumber: 1,
     category: "Intermediário Masculino",
-    timecap: 480,
+    timecap: 780,
     type: "for_time",
-    "rounds": [
+    rounds: [
       {
-        "exercices": [
-          { name: "Toes to Bar", reps: 30 },
-          { name: "Burpees Box Jump Over", reps: 30 },
+        exercices: [
+          { name: "Cal Row", reps: 40 },
+          { name: "C2B", reps: 28 },
+          { name: "Burpee Box Jump Over", reps: 24 },
         ],
       },
       {
-        "exercices": [
-          { name: "Toes to Bar", reps: 20 },
-          { name: "Burpees Box Jump Over", reps: 20 },
-        ],
-      },
-      {
-        "exercices": [
-          { name: "Toes to Bar", reps: 10 },
-          { name: "Burpees Box Jump Over", reps: 10 },
+        exercices: [
+          { name: "Cal Row", reps: 40 },
+          { name: "Pull Up", reps: 24 },
+          { name: "Burpees Box Jump Over", reps: 28 },
         ],
       },
     ],
   },
   {
-    name: "Jump Frog",
+    name: "WOD 1",
     eventNumber: 1,
     category: "RX Masculino",
-    timecap: 480,
+    timecap: 780,
     type: "for_time",
-    "rounds": [
+    rounds: [
       {
-        "exercices": [
-          { name: "Toes to Bar Syncro", reps: 30 },
-          { name: "Burpees Box Jump Over", reps: 30 },
+        exercices: [
+          { name: "Cal Row", reps: 40 },
+          { name: "BMU", reps: 28 },
+          { name: "Burpee Box Jump Over", reps: 24 },
         ],
       },
       {
-        "exercices": [
-          { name: "Toes to Bar Syncro", reps: 20 },
-          { name: "Burpees Box Jump Over", reps: 20 },
-        ],
-      },
-      {
-        "exercices": [
-          { name: "Toes to Bar Syncro", reps: 10 },
-          { name: "Burpees Box Jump Over", reps: 10 },
+        exercices: [
+          { name: "Cal Row", reps: 40 },
+          { name: "C2B", reps: 32 },
+          { name: "Burpee Box Jump Over", reps: 28 },
         ],
       },
     ],

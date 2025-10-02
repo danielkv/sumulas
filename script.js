@@ -151,14 +151,16 @@ function buildRound(round, type) {
   const roundContainerElem = createElement(ROUND_CONTAINER_CLASS);
   const allExerciceContainerElem = createElement(
     ALL_EXERCICES_CONTAINER_CLASS,
-    "table",
+    "table"
   );
   const roundTitleElem = createElement(ROUND_TITLE_CLASS);
 
   roundTitleElem.innerText = round.name || `Round ${ROUND_COUNT}`;
 
   round.exercices.forEach((exercice) => {
-    allExerciceContainerElem.appendChild(buildExercice(exercice, type));
+    allExerciceContainerElem.appendChild(
+      buildExercice(exercice, round.type || type)
+    );
   });
 
   roundContainerElem.appendChild(roundTitleElem);
@@ -177,14 +179,14 @@ function buildExercice(exercice, type) {
   const reps = exercice.reps;
   const units = exercice.units || "x";
 
-  const countSquare = reps === "max"
-    ? exercice.squares || SQUARE_DIVIDER
-    : exercice.squares ||
-      Math.ceil(exercice.reps / SQUARE_DIVIDER);
+  const countSquare =
+    reps === "max"
+      ? exercice.squares || SQUARE_DIVIDER
+      : exercice.squares || Math.ceil(exercice.reps / SQUARE_DIVIDER);
 
   const squareNumber = Math.ceil(exercice.reps / countSquare);
 
-  const repsLabel = reps === "max" ? "MAX" : `${reps}${units}`;
+  const repsLabel = reps ? (reps === "max" ? "MAX" : `${reps}${units}`) : "";
 
   titleElem.innerText = `${repsLabel} ${exercice.name}`;
 
@@ -192,10 +194,12 @@ function buildExercice(exercice, type) {
     const squareElem = createElement(EXERCICE_SQUARE_CLASS);
     if (type !== "max_weight") {
       const squareNumberElem = createElement(EXERCICE_SQUARE_NUMBER_CLASS);
-      const number = exercice.squareNumber || Math.max(
-        0,
-        Math.min(squareNumber, exercice.reps - index * squareNumber),
-      );
+      const number =
+        exercice.squareNumber ||
+        Math.max(
+          0,
+          Math.min(squareNumber, exercice.reps - index * squareNumber)
+        );
 
       if (!exercice.emptySquare) squareNumberElem.innerText = number;
       squareElem.appendChild(squareNumberElem);

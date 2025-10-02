@@ -1,79 +1,134 @@
 export default [
   {
-    name: "C&J Run",
+    name: "WOD 3",
     eventNumber: 3,
     category: "Scaled Masculino",
-    timecap: 840,
-    type: "amrap",
+    timecap: 660,
+    type: "for_time",
     rounds: [
       {
+        name: "Carga máxima",
+        type: "max_weight",
+        exercices: [{ name: "Clean", squares: 2 }],
+      },
+      {
+        exercices: [{ name: "Run", reps: 800, units: "m", squares: 1 }],
+      },
+      {
         exercices: [
-          {
-            name: "Run",
-            reps: 1.6,
-            squares: 4,
-            squareNumber: 400,
-            units: "km",
-          },
-          {
-            name: "Clean n' Jerk 50kg",
-            reps: "max",
-            squares: 15,
-            squareNumber: 5,
-          },
+          { name: "Hang Power Clean 40kg (Atleta A)", reps: 9, squares: 3 },
+          { name: "Hang Power Clean 40kg (Atleta B)", reps: 9, squares: 3 },
+          { name: "Front Squat 40kg (Atleta A)", reps: 9, squares: 3 },
+          { name: "Front Squat 40kg (Atleta B)", reps: 9, squares: 3 },
+        ],
+      },
+      {
+        exercices: [
+          { name: "Hang Power Clean 40kg (Atleta A)", reps: 6, squares: 3 },
+          { name: "Hang Power Clean 40kg (Atleta B)", reps: 6, squares: 3 },
+          { name: "Front Squat 40kg (Atleta A)", reps: 6, squares: 3 },
+          { name: "Front Squat 40kg (Atleta B)", reps: 6, squares: 3 },
+        ],
+      },
+      {
+        exercices: [
+          { name: "Hang Power Clean 40kg (Atleta A)", reps: 3, squares: 3 },
+          { name: "Hang Power Clean 40kg (Atleta B)", reps: 3, squares: 3 },
+          { name: "Front Squat 40kg (Atleta A)", reps: 3, squares: 3 },
+          { name: "Front Squat 40kg (Atleta B)", reps: 3, squares: 3 },
         ],
       },
     ],
   },
   {
-    name: "C&J Run",
+    name: "WOD 3",
     eventNumber: 3,
     category: "Intermediário Masculino",
-    timecap: 780,
-    type: "amrap",
+    timecap: 840,
+    type: "for_time",
     rounds: [
       {
+        name: "Carga máxima",
+        type: "max_weight",
+        exercices: [{ name: "Clean", squares: 2 }],
+      },
+      {
+        exercices: [{ name: "Run", reps: 800, units: "m", squares: 1 }],
+      },
+      {
         exercices: [
-          {
-            name: "Run",
-            reps: 1.6,
-            squares: 4,
-            units: "km",
-            squareNumber: 400,
-          },
-          {
-            name: "Clean n' Jerk 65kg",
-            reps: "max",
-            squares: 15,
-            squareNumber: 5,
-          },
+          { name: "Hang Squat Clean 50kg (Atleta A)", reps: 9, squares: 3 },
+          { name: "Hang Squat Clean 50kg (Atleta B)", reps: 9, squares: 3 },
+          { name: "STOH 50kg (Atleta A)", reps: 9, squares: 3 },
+          { name: "STOH 50kg (Atleta B)", reps: 9, squares: 3 },
         ],
+      },
+      {
+        exercices: [
+          { name: "Hang Squat Clean 50kg (Atleta A)", reps: 6, squares: 3 },
+          { name: "Hang Squat Clean 50kg (Atleta B)", reps: 6, squares: 3 },
+          { name: "STOH 50kg (Atleta A)", reps: 6, squares: 3 },
+          { name: "STOH 50kg (Atleta B)", reps: 6, squares: 3 },
+        ],
+      },
+      {
+        exercices: [
+          { name: "Hang Squat Clean 50kg (Atleta A)", reps: 3, squares: 3 },
+          { name: "Hang Squat Clean 50kg (Atleta B)", reps: 3, squares: 3 },
+          { name: "STOH 50kg (Atleta A)", reps: 3, squares: 3 },
+          { name: "STOH 50kg (Atleta B)", reps: 3, squares: 3 },
+        ],
+      },
+      {
+        name: "Carga máxima",
+        type: "max_weight",
+        exercices: [{ name: "Clean", squares: 2 }],
       },
     ],
   },
   {
-    name: "C&J Run",
+    name: "WOD 3",
     eventNumber: 3,
     category: "RX Masculino",
-    timecap: 780,
-    type: "amrap",
+    timecap: 840,
+    type: "for_time",
     rounds: [
       {
+        name: "Carga máxima",
+        type: "max_weight",
+        exercices: [{ name: "Snatch", squares: 2 }],
+      },
+      {
+        exercices: [{ name: "Run", reps: 800, units: "m", squares: 1 }],
+      },
+      {
         exercices: [
-          {
-            name: "Run",
-            reps: 1.6,
-            squares: 4,
-            units: "km",
-            squareNumber: 400,
-          },
-          {
-            name: "Clean n' Jerk 80kg",
-            reps: "max",
-            squares: 15,
-            squareNumber: 5,
-          },
+          { name: "Hang Squat Clean 60kg (Atleta A)", reps: 9, squares: 3 },
+          { name: "Hang Squat Clean 60kg (Atleta B)", reps: 9, squares: 3 },
+          { name: "STOH 60kg (Atleta A)", reps: 9, squares: 3 },
+          { name: "STOH 60kg (Atleta B)", reps: 9, squares: 3 },
         ],
+      },
+      {
+        exercices: [
+          { name: "Hang Squat Clean 60kg (Atleta A)", reps: 6, squares: 3 },
+          { name: "Hang Squat Clean 60kg (Atleta B)", reps: 6, squares: 3 },
+          { name: "STOH 60kg (Atleta A)", reps: 6, squares: 3 },
+          { name: "STOH 60kg (Atleta B)", reps: 6, squares: 3 },
+        ],
+      },
+      {
+        exercices: [
+          { name: "Hang Squat Clean 60kg (Atleta A)", reps: 3, squares: 3 },
+          { name: "Hang Squat Clean 60kg (Atleta B)", reps: 3, squares: 3 },
+          { name: "STOH 60kg (Atleta A)", reps: 3, squares: 3 },
+          { name: "STOH 60kg (Atleta B)", reps: 3, squares: 3 },
+        ],
+      },
+      {
+        name: "Carga máxima",
+        type: "max_weight",
+        exercices: [{ name: "Clean", squares: 2 }],
       },
     ],
   },
